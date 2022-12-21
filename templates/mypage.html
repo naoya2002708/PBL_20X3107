@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>歩数管理アプリ マイページ</title>
+    </head>
+
+    <body>
+        <br>
+        <h1>歩数記録APP</h1>
+        <h2  class="daimei">マイページ</h2>
+        <h4>{{msg|safe}}</h4>
+        <a href="/logout" tole="button">ログアウト</a>
+        
+        <h4>{{name|safe}}さんの歩数データ</h4>
+        
+
+        <table align="center" cellspacing="0">
+            
+            <tr><td align="right">本日の歩数  </td><td>{{today_record|safe}}歩</td></tr>
+            <br>
+            <tr><td align="right">本日の消費カロリー </td><td>{{today_calorie|safe}}kcal</td></tr>
+            <br>
+            <tr><td align="right">今までの総歩数 </td><td>{{total|safe}}歩</td></tr>
+    </table>
+    <a href="/record" tole="button">歩数の登録はこちら</a><br>
+    <a href="/search" tole="button">ランキングはこちら</a>
+    </body>
+</html>

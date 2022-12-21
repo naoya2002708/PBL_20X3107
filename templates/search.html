@@ -1,0 +1,33 @@
+<table>
+    <form method="POST" action="search">
+        <h1>歩数記録APP</h1>
+        <h2  class="daimei">ランキング検索</h2>
+
+        <a href="/home">ホームに戻る</a>
+        <tr>
+            <td>日付</td>
+            <td>ランキング</td>
+            <td>形式</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="date" name="date"> </td>
+            <td><label>歩数<input type="radio" name="ranking" value="steps" checked></label><br>
+                <label>カロリー<input type="radio" name="ranking" value="calorie"></label><br>
+                <label>総歩数<input type="radio" name="ranking" value="sum_steps"></label></td>
+            <td><label>JSON<input type="radio" name="format" value="JSON" checked></label><br>
+                <label>XML<input type="radio" name="format" value="XML"></label></td>
+            <td><input type="submit" value="検索"></td>
+        </tr>
+
+
+
+
+    </form>
+
+
+
+
+
+
+</table>

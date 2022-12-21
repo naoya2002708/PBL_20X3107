@@ -1,0 +1,23 @@
+
+<head>
+    <meta charset=”utf-8″>
+    <title>歩数管理アプリ 歩数記録</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+
+<body>
+    <table align="center">
+        <form method="POST" action="record">
+            <br>
+            <h1>歩数記録APP</h1>
+            <h2  class="daimei">歩数記録</h2>
+            <br>
+            <h>{{ msg|safe }}</h>
+            <tr><td>日付</td><td><input type="date" name="record_date"  placeholder="※例  65.5"required></td></tr> 
+            <tr><td>歩数</td><td><input type="text" name="steps"  placeholder="※例  2000"required></td></tr> 
+            <tr><td>メモ</td><td><input type="text" name="memo"  placeholder="※例  ディズニー行った。"required></td></tr> 
+            <tr><td colspan="2" align="right"><input type="submit" value="作成" class="btn-submit"></td></tr>
+        </form>
+    </table>
+    </body>
